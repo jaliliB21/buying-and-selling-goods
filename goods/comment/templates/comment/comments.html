@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+{% block title %}Comments{% endblock %}
+{% block content %}
+
+<div class="grid grid-cols-5 gap-6">
+  <a href="{% url 'item:detail' item.id %}">
+    <div class="col-span-1">
+      <img src="{{ item.image.url }}" class="rounded-xl">
+    </div> 
+  </a>
+  <div class="col-span-1 p-6 bg-gray-100 rounded-xl">
+    <h1 class="mb-6 text-3xl">{{ item.name }}</h1>
+    <p class="text-gray-500"><strong>Price: </strong>{{ item.price }}</p>
+    <p class="text-gray-500"><strong>Seller: </strong>{{ item.created_by.username }}</p>
+  </div>
+</div>
+{% if comments %}
+<div class="card mt-4">
+    <h5 class="card-header">Comments</h5>
+    {% for comment in comments %}
+    <div class="card-body">
+      <h5 class="card-title"><strong>posted_by: </strong>{{ comment.posted_py.username }}</h5>
+      <p class="card-text mb-2"><strong>text: </strong>{{ comment.comment }} <br> {{ comment.created_at }}</p>
+      <hr class="mb-2">
+      <br>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if request.user.is_authenticated %}
+<form method="POST" action="." class="mt-4">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-primary mt-2">Add comment</button>
+</form>
+{% endif %}
+
+{% endblock %}

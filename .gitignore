@@ -1,0 +1,10 @@
+env-puddle
+goods/db.sqlite3
+.idea/
+__pycache__/
+goods/comment/migrations/*_initial.py
+goods/core/migrations/*_initial.py
+goods/conversation/migrations/*_initial.py
+goods/dashboard/migrations/*_initial.py
+goods/goods/migrations/*_initial.py
+goods/item/migrations/*_initial.py
