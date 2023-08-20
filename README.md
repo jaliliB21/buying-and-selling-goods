@@ -11,7 +11,7 @@ Features and capabilities of this project:
 - To sell your product, there is a button under the products that the buyer can click on to send you a message and contact you to buy.
 - Both the seller and the buyer can see the received and sent messages for each product in the rooms section
 
-  All these items require registration
+All these items require registration
   
 Features that can be seen without registration and login:
 
@@ -23,4 +23,5 @@ In general, this is an advertising site
 
 
 Thank you for your presence 
+
 the writer: behzad jalili - jaliliB21
