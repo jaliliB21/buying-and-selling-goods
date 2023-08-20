@@ -22,6 +22,7 @@ Features that can be seen without registration and login:
 In general, this is an advertising site
 
 
-Thank you for your presence 
+Thank you for your presence.
+
 
 the writer: behzad jalili - jaliliB21
