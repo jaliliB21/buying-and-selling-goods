@@ -18,7 +18,7 @@ Features that can be seen without registration and login:
 - View all products on the home page
 - Ability to search for products based on category, name and description
 - The ability to view the product details page and view comments (the possibility of commenting for people who are not logged in) only viewing
-- 
+
 In general, this is an advertising site
 
 
