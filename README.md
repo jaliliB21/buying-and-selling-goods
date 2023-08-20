@@ -1,5 +1,7 @@
 # buying-and-selling-goods
 Hi!
+This is a project with powerful Django framework.
+
 The project you see is a site for buying and selling goods, where you can put products for sale or buy the products available on the site.
 
 Features and capabilities of this project:
